@@ -1,83 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Jeremiah Perez | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremiah Jose O. Perez - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">JJP</div>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
 
-<nav>
-  <h2>Jeremiah Perez</h2>
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Jeremiah Jose O. Perez</h1>
+                <p class="hero-subtitle">BSIT Student | Aspiring Full-Stack Developer</p>
+                <p class="hero-description">
+                    Seeking internship/OJT opportunities to apply academic knowledge and gain practical experience
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View Projects</a>
+                </div>
+            </div>
+        </div>
+    </header>
 
-<header class="hero">
-  <h1>Hi, I'm Jeremiah 👋</h1>
-  <p>BSIT Student | Aspiring Web & Mobile Developer</p>
-  <a class="btn" href="#projects">View My Work</a>
-</header>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>
+                    I am a passionate BSIT student from National Teachers College, currently in my 4th year. 
+                    I'm seeking an internship/OJT opportunity to apply my academic knowledge, gain practical 
+                    experience in software development, and contribute meaningfully to organizational objectives.
+                </p>
+                <p>
+                    With a strong foundation in full-stack development using technologies like Laravel, Flutter, 
+                    and various databases, I bring a problem-solving mindset and eagerness to learn. I have hands-on 
+                    experience building real-world applications including management systems and e-commerce platforms.
+                </p>
+            </div>
+        </div>
+    </section>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    I'm a Bachelor of Science in Information Technology student with experience in web and mobile application development.
-    I enjoy building practical systems like e-commerce platforms and booking applications. I'm currently looking for
-    an internship where I can grow my skills and contribute to real-world projects.
-  </p>
-</section>
+    <!-- Skills Section -->
+    <section id="skills" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">Dart</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Laravel</span>
+                        <span class="skill-tag">Flutter</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Firebase</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Development Tools</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Android Studio</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">XAMPP</span>
+                        <span class="skill-tag">Postman</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Design Tools</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Canva</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Team Collaboration</span>
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Time Management</span>
+                        <span class="skill-tag">Willingness to Learn</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="projects">
-  <h2>Projects</h2>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Recent Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-number">01</div>
+                    <h3 class="project-title">Laundry Business Management & Booking System</h3>
+                    <p class="project-description">
+                        A comprehensive system that enables customers to book laundry services and track orders 
+                        through a mobile application. The system includes features for riders to manage pickups 
+                        and deliveries, and provides shop owners with tools to efficiently manage operations, 
+                        services, and customer data.
+                    </p>
+                    <div class="project-tech">
+                        <span>Mobile App</span>
+                        <span>Booking System</span>
+                        <span>Order Tracking</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-number">02</div>
+                    <h3 class="project-title">E-Commerce Web & Application</h3>
+                    <p class="project-description">
+                        Built a full-featured CRUD-based e-commerce platform for managing basketball shoe products. 
+                        Implemented user authentication (login and signup), shopping cart functionality, checkout 
+                        process, and order confirmation features with a focus on user experience and security.
+                    </p>
+                    <div class="project-tech">
+                        <span>E-Commerce</span>
+                        <span>Authentication</span>
+                        <span>Shopping Cart</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div class="project">
-    <h3>LaundryEase</h3>
-    <p>Laundry booking and tracking mobile application with real-time status updates.</p>
-  </div>
+    <!-- Education Section -->
+    <section id="education" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Science in Information Technology</h3>
+                        <h4>National Teachers College</h4>
+                        <p class="timeline-date">4th Year College (2021 - Present)</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Senior High School - ICT Strand</h3>
+                        <h4>Arellano University - Pasig</h4>
+                        <p class="timeline-date">2018 - 2021</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Junior High School</h3>
+                        <h4>Francisco P. Felix Memorial National High School</h4>
+                        <p class="timeline-date">2015 - 2018</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div class="project">
-    <h3>Basketball Shoes E-Commerce</h3>
-    <p>CRUD-based e-commerce system using PHP (CodeIgniter 4) and MySQL.</p>
-  </div>
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-header">
+                        <h3>Ethical Issues in AI and Professional Ethics</h3>
+                        <span class="cert-date">Sep 2025</span>
+                    </div>
+                    <p class="cert-source">University of Colorado Boulder (Coursera)</p>
+                    <p class="cert-focus">
+                        <strong>Focus:</strong> Data Ethics, Responsible AI, Diversity Awareness, 
+                        Information Privacy, Ethical Standards in Computing
+                    </p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-header">
+                        <h3>Continuous Integration and Continuous Delivery (CI/CD)</h3>
+                        <span class="cert-date">Dec 2025</span>
+                    </div>
+                    <p class="cert-source">IBM (Coursera)</p>
+                    <p class="cert-focus">
+                        <strong>Focus:</strong> CI/CD, DevOps, Infrastructure as Code (IaC), 
+                        Automation, GitHub, OpenShift, Kubernetes
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div class="project">
-    <h3>Smart Inventory System</h3>
-    <p>Capstone project focused on inventory monitoring for small businesses.</p>
-  </div>
+    <!-- Contact Section -->
+    <section id="contact" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p class="contact-intro">
+                    I'm currently looking for internship/OJT opportunities. 
+                    Let's connect and discuss how I can contribute to your team!
+                </p>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Cainta, Rizal, Philippines</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+639634360315">+63 9634360315</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:perezjrmh@gmail.com">perezjrmh@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-</section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Jeremiah Jose O. Perez. All rights reserved.</p>
+        </div>
+    </footer>
 
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="skills">
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>JavaScript</span>
-    <span>PHP (CodeIgniter 4)</span>
-    <span>MySQL</span>
-    <span>Java</span>
-    <span>Python</span>
-    <span>Dart (Flutter)</span>
-  </div>
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: your-email@example.com</p>
-  <p>GitHub: <a href="https://github.com/perez-15" target="_blank">github.com/perez-15</a></p>
-  <p>LinkedIn: add-your-link-here</p>
-</section>
-
-<footer>
-  <p>© 2026 Jeremiah Perez</p>
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
