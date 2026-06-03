@@ -33,6 +33,15 @@
     <aside class="left-panel" id="leftPanel">
         <div class="lp-inner">
 
+            <div class="lp-brand">
+                <div class="lp-avatar-ring">
+                    <img src="images/Profile.png" alt="Jeremiah Perez" class="lp-avatar" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="lp-avatar-fallback">JP</div>
+                </div>
+                <div class="lp-open-badge">
+                    <span class="open-dot"></span>Open to Work
+                </div>
+            </div>
 
             <div class="lp-identity">
                 <h1 class="lp-name">Jeremiah<br>Perez</h1>
@@ -123,7 +132,16 @@
                 </div>
             </div>
 
-        
+            <!-- Stats bar -->
+            <div class="stats-row">
+                <div class="stat-item"><span class="stat-n">4+</span><span class="stat-l">Projects Completed</span></div>
+                <div class="stat-divider"></div>
+                <div class="stat-item"><span class="stat-n">4 mo</span><span class="stat-l">Internship Experience</span></div>
+                <div class="stat-divider"></div>
+                <div class="stat-item"><span class="stat-n">12+</span><span class="stat-l">Technologies Used</span></div>
+                <div class="stat-divider"></div>
+                <div class="stat-item"><span class="stat-n">4</span><span class="stat-l">Certifications</span></div>
+            </div>
 
             <!-- Experience + Skills -->
             <div class="rp-bottom-grid">
@@ -161,8 +179,12 @@
                     </p>
                     <div class="skills-grid">
                         <div class="skill-cat">
-                            <p class="skill-cat-name">Frontend / Backend</p>
-                            <div class="skill-tags"><span class="sk primary">React</span><span class="sk primary">JavaScript</span><span class="sk">HTML/CSS</span> <span class="sk primary">Laravel</span><span class="sk primary">PHP</span><span class="sk">Node.js</span></div>
+                            <p class="skill-cat-name">Frontend</p>
+                            <div class="skill-tags"><span class="sk primary">React</span><span class="sk primary">JavaScript</span><span class="sk">HTML/CSS</span></div>
+                        </div>
+                        <div class="skill-cat">
+                            <p class="skill-cat-name">Backend</p>
+                            <div class="skill-tags"><span class="sk primary">Laravel</span><span class="sk primary">PHP</span><span class="sk">Node.js</span></div>
                         </div>
                         <div class="skill-cat">
                             <p class="skill-cat-name">Mobile</p>
@@ -350,189 +372,6 @@
     </main>
 </div>
 
-
-               <div class="project-card">
-    <div class="project-image">
-        <img src="images/MambaZone.png" alt="Kobe Shoes E-Commerce App">
-        <div class="project-overlay">
-            <div class="project-number">02</div>
-        </div>
-    </div>
-    <div class="project-content">
-        <h3 class="project-title">Kobe Shoes E-Commerce App</h3>
-        <p class="project-description">
-            Developed an Android application using Android Studio with XML layouts and Firebase as the backend. 
-            The app features user authentication (login and signup), a product catalog for Kobe shoes, shopping cart functionality, 
-            checkout process, and order confirmation, focusing on a seamless mobile shopping experience.
-        </p>
-        <div class="project-tech">
-            <span>Android Studio</span>
-            <span>Firebase</span>
-            <span>XML Layouts</span>
-            <span>E-Commerce</span>
-            <span>Authentication</span>
-            <span>Shopping Cart</span>
-        </div>
-    </div>
-</div>
-
-<div class="project-card">
-    <div class="project-image">
-        <img src="images/Shoeshop.png" alt="Shoe Shop Website">
-        <div class="project-overlay">
-            <div class="project-number">03</div>
-        </div>
-    </div>
-    <div class="project-content">
-        <h3 class="project-title">Shoe Shop Website with CRUD & RBAC</h3>
-        <p class="project-description">
-            Built a web-based e-commerce platform using PHP and CodeIgniter 4. 
-            Implemented CRUD operations for managing products, role-based access control (RBAC) for admins and users, 
-            and user authentication to ensure secure access. Focused on creating a functional and organized online store experience.
-        </p>
-        <div class="project-tech">
-            <span>PHP</span>
-            <span>CodeIgniter 4</span>
-            <span>CRUD Operations</span>
-            <span>RBAC</span>
-            <span>Authentication</span>
-            <span>E-Commerce</span>
-        </div>
-    </div>
-</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="section section-dark">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Bachelor of Science in Information Technology</h3>
-                        <h4>National Teachers College</h4>
-                        <p class="timeline-date">4th Year College (2021 - Present)</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Senior High School - ICT Strand</h3>
-                        <h4>Arellano University - Pasig</h4>
-                        <p class="timeline-date">2018 - 2021</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Junior High School</h3>
-                        <h4>Francisco P. Felix Memorial National High School</h4>
-                        <p class="timeline-date">2015 - 2018</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="section">
-        <div class="container">
-            <h2 class="section-title">Certifications</h2>
-            <div class="cert-grid">
-                <div class="cert-card">
-                    <div class="cert-image">
-                        <img src="images/ethics.png" alt="AI Ethics Certification">
-                    </div>
-                    <div class="cert-content">
-                        <div class="cert-header">
-                            <h3>Ethical Issues in AI and Professional Ethics</h3>
-                            <span class="cert-date">Sep 2025</span>
-                        </div>
-                        <p class="cert-source">University of Colorado Boulder (Coursera)</p>
-                        <p class="cert-focus">
-                            <strong>Focus:</strong> Data Ethics, Responsible AI, Diversity Awareness, 
-                            Information Privacy, Ethical Standards in Computing
-                        </p>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-image">
-                        <img src="images/CiCd.png" alt="CI/CD Certification">
-                    </div>
-                    <div class="cert-content">
-                        <div class="cert-header">
-                            <h3>Continuous Integration and Continuous Delivery (CI/CD)</h3>
-                            <span class="cert-date">Dec 2025</span>
-                        </div>
-                        <p class="cert-source">IBM (Coursera)</p>
-                        <p class="cert-focus">
-                            <strong>Focus:</strong> CI/CD, DevOps, Infrastructure as Code (IaC), 
-                            Automation, GitHub, OpenShift, Kubernetes
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section section-dark">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <p class="contact-intro">
-                    I'm currently looking for internship/OJT opportunities. 
-                    Let's connect and discuss how I can contribute to your team!
-                </p>
-                <div class="contact-grid">
-                   <div class="contact-item">
-    <div class="contact-icon">📍</div>
-    <div>
-        <h4>Location</h4>
-        <p>Cainta, Rizal, Philippines</p>
-    </div>
-</div>
-
-<div class="contact-item">
-    <div class="contact-icon">📞</div>
-    <div>
-        <h4>Phone</h4>
-        <p><a href="tel:+639634360315">+63 9634360315</a></p>
-    </div>
-</div>
-
-<div class="contact-item">
-    <div class="contact-icon">✉️</div>
-    <div>
-        <h4>Email</h4>
-        <p><a href="mailto:perezjrmh@gmail.com">perezjrmh@gmail.com</a></p>
-    </div>
-</div>
-
-<div class="contact-item">
-    <div class="contact-icon">𝐟</div>
-    <div>
-        <h4>Facebook</h4>
-        <p><a href="https://www.facebook.com/jeremiah.perez.184" target="_blank">Jeremiah Perez</a></p>
-    </div>
-</div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Jeremiah Jose O. Perez. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
->>>>>>> d0ed137d28e297eb64c5f121504dfbc9ac45ac0d
+<script src="script.js"></script>
 </body>
 </html>
