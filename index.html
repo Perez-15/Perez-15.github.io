@@ -1,336 +1,355 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeremiah - Portfolio</title>
+    <title>Jeremiah Perez — Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">Jeremiah Perez</div>
-            <ul class="nav-menu">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#certifications" class="nav-link">Certifications</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <button class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Jeremiah Jose O. Perez</h1>
-                <p class="hero-subtitle">BSIT Student</p>
-                <p class="hero-description">
-                    Seeking internship/OJT opportunities to apply academic knowledge and gain practical experience
-                </p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="#projects" class="btn btn-secondary">View Projects</a>
-                </div>
+<!-- Mobile Top Bar -->
+<header class="topbar" id="topbar">
+    <button class="mob-menu-btn" id="mobMenuBtn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+    </button>
+    <span class="topbar-brand">JP</span>
+    <button class="theme-btn-mob" id="themeBtnMob" aria-label="Toggle theme">
+        <svg class="sun-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="moon-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+</header>
+
+<!-- Mobile overlay -->
+<div class="mob-overlay" id="mobOverlay"></div>
+
+<!-- HERO SHELL -->
+<div class="hero-shell" id="heroShell">
+
+    <!-- LEFT PANEL (sidebar) -->
+    <aside class="left-panel" id="leftPanel">
+        <div class="lp-inner">
+
+
+            <div class="lp-identity">
+                <h1 class="lp-name">Jeremiah<br>Perez</h1>
+                <p class="lp-title">Full Stack Developer</p>
+                <p class="lp-summary">BSIT graduate who builds end-to-end web &amp; mobile apps. Laravel backends, React frontends, Flutter mobile. Shipped production systems at Garuda Recruitment Agency.</p>
             </div>
-        </div>
-    </header>
 
-    <!-- About Section -->
-<section id="about" class="section">
-    <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-            <div class="about-image">
-                <img src="images/Profile.png" alt="Jeremiah Perez">
-            </div>
-            <div class="about-text">
-                  <p>
-                  I am a passionate BSIT student at National Teachers College, currently in my 4th year. 
-                  I am seeking an internship/OJT opportunity to apply my academic knowledge, 
-                  gain practical experience in software or web development, or any IT-related role, 
-                  and contribute meaningfully to organizational objectives.
-
-                </p>
-                <p>
-                  I have experience in full-stack development using technologies such as Laravel, Flutter, and various databases, 
-                  paired with a problem-solving mindset and eagerness to learn. I have worked on applications including management 
-                  systems and e-commerce platforms, and have designed user interfaces and prototypes using Figma and Canva.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section section-dark">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div class="skills-list">
-                        <span class="skill-tag">PHP</span>
-                        <span class="skill-tag">Dart</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Java</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Frameworks</h3>
-                    <div class="skills-list">
-                        <span class="skill-tag">Laravel</span>
-                        <span class="skill-tag">Flutter</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Databases</h3>
-                    <div class="skills-list">
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">Firebase</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Development Tools</h3>
-                    <div class="skills-list">
-                        <span class="skill-tag">VS Code</span>
-                        <span class="skill-tag">Android Studio</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">XAMPP</span>
-                        <span class="skill-tag">Postman</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Design Tools</h3>
-                    <div class="skills-list">
-                        <span class="skill-tag">Figma</span>
-                        <span class="skill-tag">Canva</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Soft Skills</h3>
-                    <div class="skills-list">
-                        <span class="skill-tag">Team Collaboration</span>
-                        <span class="skill-tag">Problem Solving</span>
-                        <span class="skill-tag">Time Management</span>
-                        <span class="skill-tag">Willingness to Learn</span>
+            <div class="lp-edu">
+                <p class="lp-section-label">Education</p>
+                <div class="lp-edu-row">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                    <div>
+                        <p class="lp-edu-degree">B.S. Information Technology</p>
+                        <p class="lp-edu-school">National Teachers College · 2022–2026</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">Recent Projects</h2>
+            <div class="lp-contact">
+                <p class="lp-section-label">Contact</p>
+                <a href="mailto:perezjrmh@gmail.com" class="lp-contact-row">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    perezjrmh@gmail.com
+                </a>
+                <a href="tel:+639634360315" class="lp-contact-row">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 11.5a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 7.5 7.5l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    +63 963 436 0315
+                </a>
+                <div class="lp-contact-row">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Cainta, Rizal, PH
+                </div>
+                <a href="https://linkedin.com/in/jeremiahperez" target="_blank" class="lp-contact-row">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/jeremiahperez" target="_blank" class="lp-contact-row">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    GitHub
+                </a>
+            </div>
+
+            <div class="lp-actions">
+                <a href="Resume_Perez__1_.pdf" download class="btn-download">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Download Resume
+                </a>
+                <button class="theme-btn-sb" id="themeBtnSb" aria-label="Toggle theme">
+                    <svg class="sun-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg class="moon-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <span class="theme-label">Dark Mode</span>
+                </button>
+            </div>
+
+        </div>
+    </aside>
+
+    <!-- RIGHT PANEL -->
+    <main class="right-panel" id="rightPanel">
+
+        <!-- HERO (above the fold) -->
+        <div class="rp-hero">
+
+            <div class="rp-intro-row">
+                <div class="rp-photo-col">
+                    <div class="rp-photo-frame">
+                        <img src="images/Profile.png" alt="Jeremiah Perez" class="rp-photo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="rp-photo-fallback">JP</div>
+                        <div class="rp-photo-deco"></div>
+                    </div>
+                </div>
+                <div class="rp-intro-col">
+                    <div class="rp-greeting">
+                        <span class="rp-wave">👋</span>
+                        <span>Hey, I'm Jeremiah</span>
+                    </div>
+                    <h2 class="rp-headline">Full Stack<br><em>Developer</em></h2>
+                    <p class="rp-about">
+                        I design and build complete digital products — from database schemas and REST APIs in <strong>Laravel</strong>, to pixel-perfect UIs in <strong>React</strong>, to cross-platform apps in <strong>Flutter</strong>. Currently seeking a full-time role where I can contribute and ship things that matter.
+                    </p>
+                    <div class="rp-cta-row">
+                        <a href="#projects" class="btn-primary">
+                            View Projects
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                        <a href="#contact" class="btn-ghost">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+
+        
+
+            <!-- Experience + Skills -->
+            <div class="rp-bottom-grid">
+
+                <div class="exp-block">
+                    <p class="block-label">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+                        Experience
+                    </p>
+                    <div class="exp-entry">
+                        <div class="exp-dot"></div>
+                        <div class="exp-content">
+                            <div class="exp-head">
+                                <p class="exp-role">Full Stack Web Developer Intern</p>
+                                <span class="exp-period">Jan–Apr 2026</span>
+                            </div>
+                            <p class="exp-company">Garuda Recruitment Agency</p>
+                            <ul class="exp-bullets">
+                                <li>Built full-stack HR &amp; recruitment management system from scratch</li>
+                                <li>Attendance with Haversine geolocation, 5-role RBAC, PDF exports</li>
+                                <li>Deployed via Docker on Render, Vercel frontend, Railway MySQL</li>
+                                <li>Google Apps Script LOA automation: Forms → Sheets → Docs → email</li>
+                            </ul>
+                            <div class="exp-tags">
+                                <span>Laravel</span><span>React</span><span>MySQL</span><span>Docker</span><span>Sanctum</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-block">
+                    <p class="block-label">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                        Technical Skills
+                    </p>
+                    <div class="skills-grid">
+                        <div class="skill-cat">
+                            <p class="skill-cat-name">Frontend / Backend</p>
+                            <div class="skill-tags"><span class="sk primary">React</span><span class="sk primary">JavaScript</span><span class="sk">HTML/CSS</span> <span class="sk primary">Laravel</span><span class="sk primary">PHP</span><span class="sk">Node.js</span></div>
+                        </div>
+                        <div class="skill-cat">
+                            <p class="skill-cat-name">Mobile</p>
+                            <div class="skill-tags"><span class="sk primary">Flutter</span><span class="sk primary">Dart</span><span class="sk">Java</span></div>
+                        </div>
+                        <div class="skill-cat">
+                            <p class="skill-cat-name">Database</p>
+                            <div class="skill-tags"><span class="sk primary">MySQL</span><span class="sk">PostgreSQL</span><span class="sk">Firebase</span></div>
+                        </div>
+                        <div class="skill-cat full-width">
+                            <p class="skill-cat-name">Tools &amp; Deployment</p>
+                            <div class="skill-tags"><span class="sk">Git</span><span class="sk">Docker</span><span class="sk">Vercel</span><span class="sk">Render</span><span class="sk">Railway</span><span class="sk">Postman</span><span class="sk">Figma</span></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div><!-- /rp-hero -->
+
+        <!-- PROJECTS -->
+        <section id="projects" class="scroll-section">
+            <div class="section-header">
+                <span class="section-tag">Work</span>
+                <h2 class="section-heading">Recent Projects</h2>
+            </div>
             <div class="projects-grid">
-              <div class="project-card">
-    <div class="project-image">
-        <img src="images/LaunEase.png" alt="Laundry Management System">
-        <div class="project-overlay">
-            <div class="project-number">01</div>
-        </div>
-    </div>
-    <div class="project-content">
-        <h3 class="project-title">Laundry Business Management & Booking System (Capstone Project)</h3>
-        <p class="project-description">
-            Developed a comprehensive laundry management system with a mobile app for customers and riders using Flutter & Dart, 
-            and a web-based admin panel using PHP & Laravel. The system allows customers to book services, track orders in real-time, 
-            enables riders to manage pickups and deliveries, and provides shop owners with tools to efficiently manage operations, services, and customer data, all integrated through APIs.
-        </p>
-        <div class="project-tech">
-            <span>Flutter & Dart</span>
-            <span>PHP & Laravel</span>
-            <span>APIs</span>
-            <span>Booking System</span>
-            <span>Real-time Order Tracking & Messaging</span>
-            <span>Mobile App for Customers</span>
-            <span>Mobile App for Riders</span>
-            <span>Web-based Admin Panel</span>
-        </div>
-    </div>
+
+                <div class="proj-card reveal">
+                    <div class="proj-img-wrap">
+                        <img src="images/LaunEase.png" alt="LaunEase" onerror="this.parentElement.classList.add('no-img')">
+                        <div class="proj-img-placeholder"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
+                        <div class="proj-num">01</div>
+                        <span class="proj-type-badge">Full Stack · Mobile + Web</span>
+                    </div>
+                    <div class="proj-body">
+                        <h3 class="proj-title">LaunEase — Laundry Booking System</h3>
+                        <p class="proj-desc">Full-stack laundry platform: customers book &amp; pay via Flutter mobile app; riders manage pickups; shop owners control operations through a Laravel web admin. All connected via REST APIs.</p>
+                        <div class="proj-tech-row"><span>Flutter</span><span>Dart</span><span>Laravel</span><span>MySQL</span><span>REST API</span><span>PayMongo</span><span>Mapbox</span></div>
+                        <div class="proj-link-row"><span class="proj-status-chip capstone">Capstone</span></div>
+                    </div>
+                </div>
+
+                <div class="proj-card reveal">
+                    <div class="proj-img-wrap">
+                        <img src="images/Garuda.png" alt="Garuda RMS" onerror="this.parentElement.classList.add('no-img')">
+                        <div class="proj-img-placeholder"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
+                        <div class="proj-num">02</div>
+                        <span class="proj-type-badge">Full Stack · Web App</span>
+                    </div>
+                    <div class="proj-body">
+                        <h3 class="proj-title">Garuda Recruitment Management System</h3>
+                        <p class="proj-desc">Internal HR platform: applicant tracking, attendance with Haversine geolocation, performance dashboards, multi-role RBAC (5 roles), PDF exports, and Google Apps Script LOA automation.</p>
+                        <div class="proj-tech-row"><span>React</span><span>Laravel</span><span>MySQL</span><span>Sanctum</span><span>Spatie</span><span>Docker</span><span>Vercel</span></div>
+                        <div class="proj-link-row"><span class="proj-status-chip production">Production</span></div>
+                    </div>
+                </div>
+
+                <div class="proj-card reveal">
+                    <div class="proj-img-wrap">
+                        <img src="images/MambaZone.png" alt="MambaZone" onerror="this.parentElement.classList.add('no-img')">
+                        <div class="proj-img-placeholder"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
+                        <div class="proj-num">03</div>
+                        <span class="proj-type-badge">Android · E-Commerce</span>
+                    </div>
+                    <div class="proj-body">
+                        <h3 class="proj-title">MambaZone — Kobe Shoes E-Commerce</h3>
+                        <p class="proj-desc">Android e-commerce app for Kobe basketball shoes. Features user authentication, product catalog, shopping cart, checkout flow, and order confirmation.</p>
+                        <div class="proj-tech-row"><span>Android Studio</span><span>Java</span><span>Firebase</span><span>XML Layouts</span></div>
+                        <div class="proj-link-row"><span class="proj-status-chip personal">Personal</span></div>
+                    </div>
+                </div>
+
+                <div class="proj-card reveal">
+                    <div class="proj-img-wrap">
+                        <img src="images/Shoeshop.png" alt="Shoe Shop" onerror="this.parentElement.classList.add('no-img')">
+                        <div class="proj-img-placeholder"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
+                        <div class="proj-num">04</div>
+                        <span class="proj-type-badge">Web · PHP</span>
+                    </div>
+                    <div class="proj-body">
+                        <h3 class="proj-title">Shoe Shop — CRUD &amp; RBAC Web App</h3>
+                        <p class="proj-desc">Web-based e-commerce store with full CRUD for product management and role-based access control for admins and users. Built with PHP and CodeIgniter 4.</p>
+                        <div class="proj-tech-row"><span>PHP</span><span>CodeIgniter 4</span><span>MySQL</span><span>CRUD</span><span>RBAC</span></div>
+                        <div class="proj-link-row"><span class="proj-status-chip personal">Personal</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS -->
+        <section id="certifications" class="scroll-section">
+            <div class="section-header">
+                <span class="section-tag">Credentials</span>
+                <h2 class="section-heading">Certifications</h2>
+            </div>
+            <div class="certs-grid">
+
+                <div class="cert-card reveal">
+                    <div class="cert-img-wrap">
+                        <img src="images/accenture.png" alt="Accenture Academy" onerror="this.parentElement.classList.add('no-img')">
+                        <div class="cert-img-placeholder"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></div>
+                    </div>
+                    <div class="cert-body">
+                        <div class="cert-meta-row"><span class="cert-issuer">Accenture</span><span class="cert-date">Apr – May 2026</span></div>
+                        <h3 class="cert-title">Accenture Academy — Technology</h3>
+                        <p class="cert-desc">Technology fundamentals, industry-aligned digital skills, and professional development training delivered by Accenture.</p>
+                    </div>
+                </div>
+
+                <div class="cert-card reveal">
+                    <div class="cert-img-wrap">
+                        <img src="images/pep.png" alt="Technology PEP" onerror="this.parentElement.classList.add('no-img')">
+                        <div class="cert-img-placeholder"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></div>
+                    </div>
+                    <div class="cert-body">
+                        <div class="cert-meta-row"><span class="cert-issuer">National Teachers College</span><span class="cert-date">Feb – May 2026</span></div>
+                        <h3 class="cert-title">Technology Professional Enhancement Program</h3>
+                        <p class="cert-desc">Professional readiness, technical competencies, and career preparation for IT graduates entering the workforce.</p>
+                    </div>
+                </div>
+
+                <div class="cert-card reveal">
+                    <div class="cert-img-wrap">
+                        <img src="images/ethics.png" alt="AI Ethics" onerror="this.parentElement.classList.add('no-img')">
+                        <div class="cert-img-placeholder"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></div>
+                    </div>
+                    <div class="cert-body">
+                        <div class="cert-meta-row"><span class="cert-issuer">Univ. of Colorado · Coursera</span><span class="cert-date">Sep 2025</span></div>
+                        <h3 class="cert-title">Ethical Issues in AI &amp; Professional Ethics</h3>
+                        <p class="cert-desc">Data Ethics, Responsible AI, Diversity Awareness, Information Privacy, and Ethical Standards in Computing.</p>
+                    </div>
+                </div>
+
+                <div class="cert-card reveal">
+                    <div class="cert-img-wrap">
+                        <img src="images/CiCd.png" alt="CI/CD IBM" onerror="this.parentElement.classList.add('no-img')">
+                        <div class="cert-img-placeholder"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></div>
+                    </div>
+                    <div class="cert-body">
+                        <div class="cert-meta-row"><span class="cert-issuer">IBM · Coursera</span><span class="cert-date">Dec 2025</span></div>
+                        <h3 class="cert-title">Continuous Integration &amp; Continuous Delivery (CI/CD)</h3>
+                        <p class="cert-desc">CI/CD pipelines, DevOps, Infrastructure as Code, GitHub Actions, OpenShift, Kubernetes.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="scroll-section">
+            <div class="section-header">
+                <span class="section-tag">Let's Talk</span>
+                <h2 class="section-heading">Get In Touch</h2>
+            </div>
+            <div class="contact-row">
+                <div class="contact-text">
+                    <p>I'm actively looking for full-time Web Developer or Software Developer opportunities. If you have a role that fits, I'd love to connect.</p>
+                    <div class="contact-btns">
+                        <a href="mailto:perezjrmh@gmail.com" class="btn-primary">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            Send Email
+                        </a>
+                        <a href="tel:+639634360315" class="btn-ghost">Call Me</a>
+                    </div>
+                </div>
+                <div class="ref-card">
+                    <p class="ref-label">Professional Reference</p>
+                    <div class="ref-inner">
+                        <div class="ref-avatar">CL</div>
+                        <div>
+                            <p class="ref-name">Christian J. Lim</p>
+                            <p class="ref-role">General Manager · Garuda Recruitment Agency</p>
+                            <a href="mailto:christianlim.garuda@gmail.com" class="ref-email">christianlim.garuda@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="main-footer">
+            <p>&copy; 2026 Jeremiah Jose O. Perez &middot; Built with care</p>
+        </footer>
+
+    </main>
 </div>
 
-
-               <div class="project-card">
-    <div class="project-image">
-        <img src="images/MambaZone.png" alt="Kobe Shoes E-Commerce App">
-        <div class="project-overlay">
-            <div class="project-number">02</div>
-        </div>
-    </div>
-    <div class="project-content">
-        <h3 class="project-title">Kobe Shoes E-Commerce App</h3>
-        <p class="project-description">
-            Developed an Android application using Android Studio with XML layouts and Firebase as the backend. 
-            The app features user authentication (login and signup), a product catalog for Kobe shoes, shopping cart functionality, 
-            checkout process, and order confirmation, focusing on a seamless mobile shopping experience.
-        </p>
-        <div class="project-tech">
-            <span>Android Studio</span>
-            <span>Firebase</span>
-            <span>XML Layouts</span>
-            <span>E-Commerce</span>
-            <span>Authentication</span>
-            <span>Shopping Cart</span>
-        </div>
-    </div>
-</div>
-
-<div class="project-card">
-    <div class="project-image">
-        <img src="images/Shoeshop.png" alt="Shoe Shop Website">
-        <div class="project-overlay">
-            <div class="project-number">03</div>
-        </div>
-    </div>
-    <div class="project-content">
-        <h3 class="project-title">Shoe Shop Website with CRUD & RBAC</h3>
-        <p class="project-description">
-            Built a web-based e-commerce platform using PHP and CodeIgniter 4. 
-            Implemented CRUD operations for managing products, role-based access control (RBAC) for admins and users, 
-            and user authentication to ensure secure access. Focused on creating a functional and organized online store experience.
-        </p>
-        <div class="project-tech">
-            <span>PHP</span>
-            <span>CodeIgniter 4</span>
-            <span>CRUD Operations</span>
-            <span>RBAC</span>
-            <span>Authentication</span>
-            <span>E-Commerce</span>
-        </div>
-    </div>
-</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="section section-dark">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Bachelor of Science in Information Technology</h3>
-                        <h4>National Teachers College</h4>
-                        <p class="timeline-date">4th Year College (2021 - Present)</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Senior High School - ICT Strand</h3>
-                        <h4>Arellano University - Pasig</h4>
-                        <p class="timeline-date">2018 - 2021</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Junior High School</h3>
-                        <h4>Francisco P. Felix Memorial National High School</h4>
-                        <p class="timeline-date">2015 - 2018</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="section">
-        <div class="container">
-            <h2 class="section-title">Certifications</h2>
-            <div class="cert-grid">
-                <div class="cert-card">
-                    <div class="cert-image">
-                        <img src="images/ethics.png" alt="AI Ethics Certification">
-                    </div>
-                    <div class="cert-content">
-                        <div class="cert-header">
-                            <h3>Ethical Issues in AI and Professional Ethics</h3>
-                            <span class="cert-date">Sep 2025</span>
-                        </div>
-                        <p class="cert-source">University of Colorado Boulder (Coursera)</p>
-                        <p class="cert-focus">
-                            <strong>Focus:</strong> Data Ethics, Responsible AI, Diversity Awareness, 
-                            Information Privacy, Ethical Standards in Computing
-                        </p>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-image">
-                        <img src="images/CiCd.png" alt="CI/CD Certification">
-                    </div>
-                    <div class="cert-content">
-                        <div class="cert-header">
-                            <h3>Continuous Integration and Continuous Delivery (CI/CD)</h3>
-                            <span class="cert-date">Dec 2025</span>
-                        </div>
-                        <p class="cert-source">IBM (Coursera)</p>
-                        <p class="cert-focus">
-                            <strong>Focus:</strong> CI/CD, DevOps, Infrastructure as Code (IaC), 
-                            Automation, GitHub, OpenShift, Kubernetes
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section section-dark">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <p class="contact-intro">
-                    I'm currently looking for internship/OJT opportunities. 
-                    Let's connect and discuss how I can contribute to your team!
-                </p>
-                <div class="contact-grid">
-                    <div class="contact-item">
-                        <div class="contact-icon">📍</div>
-                        <div>
-                            <h4>Location</h4>
-                            <p>Cainta, Rizal, Philippines</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📞</div>
-                        <div>
-                            <h4>Phone</h4>
-                            <p><a href="tel:+639634360315">+63 9634360315</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">✉️</div>
-                        <div>
-                            <h4>Email</h4>
-                            <p><a href="mailto:perezjrmh@gmail.com">perezjrmh@gmail.com</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Jeremiah Jose O. Perez. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
