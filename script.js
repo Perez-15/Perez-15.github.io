@@ -114,6 +114,46 @@ if (rightPanel) {
     document.querySelectorAll('.reveal').forEach(el => rpObserver.observe(el));
 }
 
+// ── Scroll hint ─────────────────────────────────
+const scrollHint = document.querySelector('.scroll-hint');
+
+function hideScrollHint() {
+    if (!scrollHint) return;
+    scrollHint.classList.add('hidden');
+}
+
+function showScrollHint() {
+    if (!scrollHint) return;
+    scrollHint.classList.remove('hidden');
+}
+
+scrollHint?.addEventListener('click', () => {
+    const projects = document.getElementById('projects');
+    if (projects && rightPanel) {
+        rightPanel.scrollTo({ top: projects.offsetTop - 16, behavior: 'smooth' });
+    } else if (projects) {
+        projects.scrollIntoView({ behavior: 'smooth' });
+    }
+    hideScrollHint();
+});
+
+rightPanel?.addEventListener('scroll', () => {
+    if (rightPanel.scrollTop > 60) {
+        hideScrollHint();
+    } else {
+        showScrollHint();
+    }
+}, { passive: true });
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 60) {
+        hideScrollHint();
+    } else {
+        showScrollHint();
+    }
+}, { passive: true });
+
+
 // ── Section header animations ────────────────────
 const headerObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -145,6 +185,8 @@ if (rightPanel) {
     }, { root: rightPanel, threshold: 0.1 });
     document.querySelectorAll('.section-header').forEach(el => rpHeaderObs.observe(el));
 }
+
+
 
 // ── Skill chip micro-interactions ───────────────
 document.querySelectorAll('.sk').forEach(chip => {
